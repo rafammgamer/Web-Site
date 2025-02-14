@@ -1,0 +1,838 @@
+
+*{
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1656px){
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu
+    {
+        text-align: center;
+        padding: 1.5% 0% 0.5% 0%;
+        width: 100%;
+        background-color: #0076c5;
+        /*background-color: cornflowerblue;*/
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        width: 8%;
+        margin: 0.5% 1%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .menu a
+    {
+        color: #ececec;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .menu a:hover
+    {
+        color: #ffde27;
+    }
+
+    .vantagem
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.3em;
+    }
+
+    .vantagem ul
+    {
+        margin-top: 1%;
+    }
+
+    .monitoramento
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.3em;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .monitoramento .text
+    {
+        width: 18%;
+    }
+
+    .monitoramento .text p
+    {
+        margin-top: 5%;
+    }
+
+    .monitoramento .img
+    {
+        margin-left: 3%;
+    }
+
+    .sobre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6%;
+        padding: 3% 0%;
+        font-size: 1.3em;
+    }
+
+    .sobre .text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        line-height: 1.3em;
+    }
+
+    .sobre .text p
+    {
+        margin: 5% 0%;
+    }
+
+    .sobre .text a
+    {
+        display: flex;
+        justify-content: center;
+        width: 62%;
+        padding: 5%;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    .sobre .img:hover
+    {
+        opacity: 0.8;
+        width: 50%;
+    }
+
+    .video
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.3em;
+        background-color: rgb(219, 219, 219);
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #ececec;
+        width: 100%;
+        padding: 2% 10%;
+        font-size: 1em;
+        line-height: 1.5em;
+        background-color: #0076c5;
+    }
+
+    .empresa
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        font-size: 1.1em;
+    }
+
+    .redes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1em;
+    }
+
+    .contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1330px) and (max-width: 1655px){
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu
+    {
+        text-align: center;
+        padding: 1% 0% 0.5% 0%;
+        width: 100%;
+        background-color: #0076c5;
+        /*background-color: cornflowerblue;*/
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        width: 8%;
+        margin: 0.5% 1%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .menu a
+    {
+        color: #ececec;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .menu a:hover
+    {
+        color: #ffde27;
+    }
+
+    .vantagem
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.3em;
+    }
+
+    .vantagem ul
+    {
+        margin-top: 1%;
+    }
+
+    .monitoramento
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.3em;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .monitoramento .text
+    {
+        width: 18%;
+    }
+
+    .monitoramento .text p
+    {
+        margin-top: 5%;
+    }
+
+    .monitoramento .img
+    {
+        margin-left: 3%;
+    }
+
+    .sobre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6%;
+        padding: 3% 0%;
+        font-size: 1.3em;
+    }
+
+    .sobre .text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        line-height: 1.3em;
+    }
+
+    .sobre .text p
+    {
+        margin: 5% 0%;
+    }
+
+    .sobre .text a
+    {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        padding: 5%;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #ececec;
+        width: 100%;
+        padding: 2% 10%;
+        font-size: 1em;
+        line-height: 1.5em;
+        background-color: #0076c5;
+    }
+
+    .empresa
+    {
+        display: flex;
+        flex-direction: column;
+        width: 34%;
+        font-size: 1em;
+    }
+
+    .redes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1329px){
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu
+    {
+        text-align: center;
+        padding: 1.5% 0% 0.5% 0%;
+        width: 100%;
+        background-color: #0076c5;
+        /*background-color: cornflowerblue;*/
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        width: 9%;
+        margin: 0.5% 2%;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .menu a
+    {
+        color: #ececec;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .menu a:hover
+    {
+        color: #ffde27;
+    }
+
+    .vantagem
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.2em;
+    }
+
+    .vantagem ul
+    {
+        margin-top: 1%;
+    }
+
+    .monitoramento
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.2em;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .monitoramento .text
+    {
+        width: 18%;
+    }
+
+    .monitoramento .text p
+    {
+        margin-top: 5%;
+    }
+
+    .monitoramento .img
+    {
+        margin-left: 5%;
+    }
+
+    .sobre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6%;
+        padding: 3% 0%;
+        font-size: 1.2em;
+    }
+
+    .sobre .text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        line-height: 1.3em;
+    }
+
+    .sobre .text p
+    {
+        margin: 5% 0%;
+    }
+
+    .sobre .text a
+    {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding: 5%;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #ececec;
+        width: 100%;
+        padding: 2% 10%;
+        font-size: 1em;
+        line-height: 1.5em;
+        background-color: #0076c5;
+    }
+
+    .empresa
+    {
+        display: flex;
+        flex-direction: column;
+        width: 34%;
+        font-size: 1em;
+    }
+
+    .redes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 499px) and (max-width: 979px){
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu
+    {
+        text-align: center;
+        padding: 1.5% 0% 0.5% 0%;
+        width: 100%;
+        background-color: #0076c5;
+        /*background-color: cornflowerblue;*/
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        width: 9%;
+        margin: 0.5% 2%;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .menu a
+    {
+        color: #ececec;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .menu a:hover
+    {
+        color: #ffde27;
+    }
+
+    .vantagem
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.2em;
+    }
+
+    .vantagem ul
+    {
+        margin-top: 1%;
+    }
+
+    .monitoramento
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.2em;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .monitoramento .text
+    {
+        width: 18%;
+    }
+
+    .monitoramento .text p
+    {
+        margin-top: 5%;
+    }
+
+    .monitoramento .img
+    {
+        margin-left: 5%;
+    }
+
+    .sobre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6%;
+        padding: 3% 0%;
+        font-size: 1.2em;
+    }
+
+    .sobre .text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        line-height: 1.3em;
+    }
+
+    .sobre .text p
+    {
+        margin: 5% 0%;
+    }
+
+    .sobre .text a
+    {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding: 5%;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #ececec;
+        width: 100%;
+        padding: 2% 10%;
+        font-size: 1em;
+        line-height: 1.5em;
+        background-color: #0076c5;
+    }
+
+    .empresa
+    {
+        display: flex;
+        flex-direction: column;
+        width: 34%;
+        font-size: 1em;
+    }
+
+    .redes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 498px){
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu
+    {
+        text-align: center;
+        padding: 1.5% 0% 0.5% 0%;
+        width: 100%;
+        background-color: #0076c5;
+        /*background-color: cornflowerblue;*/
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        width: 9%;
+        margin: 0.5% 2%;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .menu a
+    {
+        color: #ececec;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .menu a:hover
+    {
+        color: #ffde27;
+    }
+
+    .vantagem
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.2em;
+    }
+
+    .vantagem ul
+    {
+        margin-top: 1%;
+    }
+
+    .monitoramento
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2% 0%;
+        font-size: 1.2em;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .monitoramento .text
+    {
+        width: 18%;
+    }
+
+    .monitoramento .text p
+    {
+        margin-top: 5%;
+    }
+
+    .monitoramento .img
+    {
+        margin-left: 5%;
+    }
+
+    .sobre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6%;
+        padding: 3% 0%;
+        font-size: 1.2em;
+    }
+
+    .sobre .text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        line-height: 1.3em;
+    }
+
+    .sobre .text p
+    {
+        margin: 5% 0%;
+    }
+
+    .sobre .text a
+    {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding: 5%;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #ececec;
+        width: 100%;
+        padding: 2% 10%;
+        font-size: 1em;
+        line-height: 1.5em;
+        background-color: #0076c5;
+    }
+
+    .empresa
+    {
+        display: flex;
+        flex-direction: column;
+        width: 34%;
+        font-size: 1em;
+    }
+
+    .redes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+    }
+}

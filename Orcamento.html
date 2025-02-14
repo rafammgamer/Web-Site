@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style_form.css">
+        <script type="text/javascript" src="jQuery3.7.1.js"></script>
+        <script type="text/javascript" src="Funcoes.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Orcamento.html">Orçamento</a></li>
+                    <li><a href="Sobre_nos.html">Sobre nós</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main style="flex-direction: column;">
+            <div class="texto">
+                <h2>Orçamento</h2>
+                <br>
+                <br>
+                <br>
+            </div>
+                <div class="container">
+                    <div class="form">
+                      <form action="recebe.php" method="post" autocomplete="on">
+                      <fieldset style="padding: 1%">
+                      <br>
+                      <br>
+                             <label for="Txt1"
+                                  title="Campo de nome"><u>N</u>ome:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                             <input id="Txt1" name="infoname"
+                                  type="text" size="30"
+                                  maxlength=40 placeholder="Digite o seu nome (Máx. 40 caracteres)"
+                                  required="required"
+                                  accesskey="n"/>
+                             <br>
+                             
+                             <label for="Txt2"
+                                  title="Telefone"><u>T</u>elefone: +55:</label>
+                             <input id="Txt2" name="infotel"
+                                  type="tel" size=13
+                                  maxlength=11 placeholder="(XX) 912345678"
+                                  accesskey="t" required="required"/>     
+                             <br>
+                             <label for="Txt3"
+                                  title="Campo de e-mail">E-<u>M</u>ail:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                             <input id="Txt3" name="infomail"
+                                  type="email" size="30"
+                                  maxlength=40 placeholder="E-mail com no máximo 25 caracteres."
+                                  required="required"
+                                  accesskey="m"/>
+                             <br>
+                             <label for="Txt4"
+                                  title="Campo de cidade"><u>C</u>idade:</label>&nbsp;&nbsp;&nbsp;
+                             <input id="Txt4" name="infocity"
+                                  type="text" size="30"
+                                  maxlength=40
+                                  required="required" spellcheck="true"
+                                  accesskey="c"/>
+                             <br/><br/>
+                             <p>Caso seja na Cidade de São Paulo:</p>
+                             <label for="Slct1"
+                                    title="Regiões de São Paulo">Qual sua região?</label>
+                             <select id="Slct1"
+                                    name="Escolha">
+                             <option value="Selecionar"><b>Selecione</b></option>
+                             <option value="Centro">Centro</option>
+                             <option value="Leste">Zona Leste</option>
+                             <option value="Norte">Zona Norte</option>
+                             <option value="Oeste">Zona Oeste</option>
+                             <option value="Sul">Zona Sul</option>
+                             </select>
+                             <br/>
+                             <br/><br/>
+                             <label for="Tx5"
+                                  title="Qual o motivo de seu contato?">Qual o motivo de seu contato?</label>
+                             <textarea id="Txt5" name="infoarea" placeholder="Insira aqui. Máximo 500 caracteres."
+                                  rows=10 cols=60 wrap="on" spellcheck="true"></textarea>
+                             <br/><br/>
+                             <label  for="Slct2"
+                                   title="Motivo de Conhecimento">Como nos conheceu?</label>
+                             <select id="Slct2"
+                                   name="Escolha">
+                                    <option value="Selecionar"><b>Selecione</b></option>
+                                    <option value="Site">Visita ao site</option>
+                                    <option value="Rede">Redes sociais</option>
+                                    <option value="Indicacao">Indicação por amigo</option>
+                                    <option value="Outros">Outro</option>
+                             </select>
+                             
+                             <label for="Dte"><u>D</u>ia de hoje:</label>
+                             <input id="Dte" name="Data"
+                                  type="date"
+                                  min=2024-01-01
+                                  required="required"
+                                  accesskey="d"/><br/>
+                           
+                             <br/><br/><br/>
+                             <input id="Txt6" name="Check1"
+                                   type="checkbox" 
+                                   value="Marcou6"
+                                  checked="checked"/>
+                             <label for="Txt6">Aceito novas notificações.</label>
+                             <br />
+                             <div class="box1" id="box1">
+                             <input id="Txt7" name="Check2"
+                                   type="checkbox" 
+                                   value="Marcou7"
+                                  required="required" onclick="verify1()"/>
+                             <label for="Txt7">Eu não sou um robô!</label>
+                             </div>
+                             <div class="box2" id="box2">
+                             <p id="Question"></p>
+                             <input id="Text" name="requisicao"
+                                    type="text" size="5"
+                                    maxlength="5"
+                                    required="required"/>
+                             <input id="BtV" name="BotaoV"
+                                    type="button" 
+                                    value="Verificar" onclick="verify2()"/>
+                             </div>
+                             <br /><br />
+                      </fieldset>
+                      <br/>
+                      <br/>
+                      <input id="Bt1" name="Botao1"
+                             type="submit" 
+                             value="Enviar informações"/>
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input id="Bt2" name="Botao2"
+                             type="button"
+                             value="Limpar formulário" onclick="reset()"/>
+                    </form>
+                    </div>
+                    <div class="window">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0923295139414!2d-46.63572072574828!3d-23.52918137882198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585fbb047051%3A0x1ad799a7c61cd5f3!2sETEC%20de%20S%C3%A3o%20Paulo%20-%20Luz!5e0!3m2!1spt-BR!2sbr!4v1730226816651!5m2!1spt-BR!2sbr" 
+                           width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+        </main>
+        
+        <footer>
+            <div class="empresa">
+                <h3>IlliosTech</h3>
+                <p>A IlliosTech busca um futuro mais limpo e sustentável para o mundo. Atua com tecnologia de última geração e conta com profissionais de ótima qualidade,
+                    além de um sistema muito eficiente de monitoramento. Tudo isso com o objetivo na mudança de paradigma energético no Brasil.
+                </p>
+            </div>
+            <div class="redes">
+                <h3>REDES SOCIAIS</h3>
+                <h4>Instagram</h4>
+                <h4>Facebook</h4>
+            </div>
+                <br>
+            <div class="contato">
+                <h3>Entre em contato</h3>
+                <p>(11) 90066-8477</p>
+                <p>contato@iliostech.com.br</p>
+                <br>
+                <p>Av. Tiradentes, 615 - Luz, São Paulo - SP, 01101-010</p>
+            </div>
+        </footer>
+    </body>
+</html>
